@@ -1,15 +1,18 @@
 class NumberRenderer
 
 	def render number
-		return 'ping' if multiple_of?(3, number)
-		return 'pong' if multiple_of?(5, number)
+		return 'p*ng' if number.multiple_of?(3) && number.multiple_of?(5) 
+		return 'ping' if number.multiple_of?(3)
+		return 'pong' if number.multiple_of?(5)
 		number.to_s
 	end
 
-	private
+end
+
+class Integer
 	
-	def multiple_of? factor, n
-		(n % factor) == 0
+	def multiple_of? factor
+		(self % factor) == 0
 	end	
 
 end
