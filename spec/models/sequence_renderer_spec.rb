@@ -1,5 +1,3 @@
-require File.expand_path(File.dirname(__FILE__) + '/../../models/sequence_renderer')
-
 describe SequenceRenderer do
   
   before :each do
