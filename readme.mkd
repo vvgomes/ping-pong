@@ -2,19 +2,37 @@ Ping Pong App
 =============
 
 This app prints a sequence of numbers, from 1 to an arbitrary integer value > 1, replacing the following:
-* multiples of 3 with "ping"
-* multiples of 5 with "pong"
-* multiples of both of the factor above with "p*ng"
+
+ - Multiples of 3 with "ping"; 
+ - Multiples of 5 with "pong"; 
+ - Multiples of both of the factor above with "p*ng".
+
 The arbitrary integer value can be passed as a parameter. The default is 100.
 
-### Installing The Dependencies
-You must have a recent ruby (1.9.* will work fine) and the bundler gem installed.
+Installing The Dependencies
+------------------------
 `$ bundle install`
 
-### Running The App
+*You must have a recent ruby (1.9.3 will work fine) and the bundler gem installed!*
+
+Running The App
+------------------------
 `$ bundle exec ruby main.rb`
+
 or
+
 `$ bundle exec ruby main.rb 20`
 
-### Running The Specs
+Running The Specs
+------------------------
+
+### All the specs:
 `$ bundle exec rake`
+
+### Only the models' specs:
+
+`$ bundle exec rake spec:models`
+
+### Only the acceptance specs:
+
+`$ bundle exec rake spec:acceptance`
